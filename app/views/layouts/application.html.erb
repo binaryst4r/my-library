@@ -9,10 +9,11 @@
 <body>
 <div class='navbar'>
 	<div class='navbar-inner'>
-		<a class='brand' href="/books">My Library</a>
+		<a class='brand' href="/">My Library App</a>
 		<ul class='nav'>
 			<% if session[:id].present? %>
 			<li><%= link_to 'Sign Out', '/logout' %></li>
+			<li><%= link_to 'My Library', books_url %></li>
 			<% else %>
 			<li><%= link_to 'Sign In', root_url %></li>
 			<% end %>
