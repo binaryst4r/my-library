@@ -1,0 +1,26 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+book_one:
+  title: The Icarus Deception
+  author: Seth Godin
+  user_id: 1
+
+book_two:
+  title: The 4 Hour Chef
+  author: Tim Ferriss
+  user_id: 1
+
+book_three:
+  title: The Walk
+  author: Stephen King
+  user_id: 1
+
+book_four:
+  title: Rework
+  author: Jason Fried
+  user_id: 1
+
+book_five:
+  title: The Lean Startup
+  author: Eric Reiss
+  user_id: 1

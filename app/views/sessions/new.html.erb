@@ -1,0 +1,9 @@
+<div class='hero-unit'>
+	<h1>Welcome</h1>
+</br>
+	<%= form_tag '/sessions', method: 'post' do %>
+	<%= text_field_tag :username, nil, placeholder: 'username' %>
+	<%= password_field_tag :password, nil, placeholder: 'password' %></br>
+	<%= submit_tag 'Sign In', class: 'btn btn-primary' %> or <%= link_to 'Sign Up', new_user_url, class: 'btn btn-info' %>
+	<% end %>
+</div>

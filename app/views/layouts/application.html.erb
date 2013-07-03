@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>BookFavs</title>
+  <%= stylesheet_link_tag    "application", :media => "all" %>
+  <%= javascript_include_tag "application" %>
+  <%= csrf_meta_tags %>
+</head>
+<body>
+<div class='navbar'>
+	<div class='navbar-inner'>
+		<a class='brand' href="/books">My Library</a>
+		<ul class='nav'>
+			<% if session[:id].present? %>
+			<li><%= link_to 'Sign Out', '/logout' %></li>
+			<% else %>
+			<li><%= link_to 'Sign In', root_url %></li>
+			<% end %>
+			<li><%= link_to 'Sign Up', new_user_url %></li>
+		</ul>
+	</div>
+</div>
+<div class='container'>
+	<%= notice %>
+	<%= yield %>
+</div>
+</body>
+</html>
